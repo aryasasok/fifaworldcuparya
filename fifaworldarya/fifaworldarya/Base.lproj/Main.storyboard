@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y2a-zh-hJx">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule-->
+        <scene sceneID="r15-QY-HaZ">
+            <objects>
+                <viewController id="kZh-9l-lOb" customClass="ScheduleViewController" customModule="fifaworldarya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ytm-Qw-x9m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QkD-H4-cbZ">
+                                <rect key="frame" x="0.0" y="-5" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleCell" rowHeight="201" id="nNR-mb-vHB" customClass="PhoneScheduleTableViewCell" customModule="fifaworldarya" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="201"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nNR-mb-vHB" id="rkV-gt-vid">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JGO-ki-rhg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebv-FG-YV7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFw-cS-edm">
+                                                            <rect key="frame" x="0.0" y="68" width="414" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggN-J3-puu">
+                                                            <rect key="frame" x="0.0" y="88.5" width="414" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkF-7F-bti">
+                                                            <rect key="frame" x="0.0" y="109" width="414" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A00-Xk-ggi">
+                                                            <rect key="frame" x="0.0" y="129.5" width="414" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3K3-mn-V1G">
+                                                            <rect key="frame" x="0.0" y="150" width="414" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-Qm-JzP" userLabel="Subscribe">
+                                                            <rect key="frame" x="0.0" y="170.5" width="414" height="30"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <action selector="didPressSubscribe:" destination="nNR-mb-vHB" eventType="touchUpInside" id="yZ7-Wn-C5W"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="JGO-ki-rhg" secondAttribute="trailing" id="MHX-i1-FAd"/>
+                                                <constraint firstItem="JGO-ki-rhg" firstAttribute="top" secondItem="rkV-gt-vid" secondAttribute="top" id="sS1-Aa-ctv"/>
+                                                <constraint firstAttribute="bottom" secondItem="JGO-ki-rhg" secondAttribute="bottom" id="t2X-n3-6lf"/>
+                                                <constraint firstItem="JGO-ki-rhg" firstAttribute="leading" secondItem="rkV-gt-vid" secondAttribute="leading" id="xjF-Tp-jkq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityLabel" destination="PkF-7F-bti" id="YMf-km-ZMr"/>
+                                            <outlet property="dateLabel" destination="A00-Xk-ggi" id="XBO-b9-gsF"/>
+                                            <outlet property="stadiumLabel" destination="ggN-J3-puu" id="g6E-1U-zc4"/>
+                                            <outlet property="subscribe" destination="6IU-Qm-JzP" id="R41-43-RsN"/>
+                                            <outlet property="teamALabel" destination="Ebv-FG-YV7" id="1nC-Oa-OYv"/>
+                                            <outlet property="teamBLabel" destination="NFw-cS-edm" id="UZx-MA-spG"/>
+                                            <outlet property="timeLabel" destination="3K3-mn-V1G" id="ZNP-Tn-xON"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kZh-9l-lOb" id="N6d-uQ-WzL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yhf-d6-rPK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Schedule" id="mZR-sJ-OiD"/>
+                    <connections>
+                        <outlet property="scheduleTableview" destination="QkD-H4-cbZ" id="7U6-7R-tvn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98y-7s-Jrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314.49275362318843" y="0.0"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="gsw-rs-qf0">
+            <objects>
+                <viewController id="GRh-16-oCN" customClass="MapViewController" customModule="fifaworldarya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9VX-DF-7Tp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oyq-fj-CSE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oyq-fj-CSE" firstAttribute="leading" secondItem="kJf-yu-Ynh" secondAttribute="leading" id="9R2-Uh-iMV"/>
+                            <constraint firstItem="Oyq-fj-CSE" firstAttribute="top" secondItem="kJf-yu-Ynh" secondAttribute="top" id="9b4-4b-sim"/>
+                            <constraint firstItem="kJf-yu-Ynh" firstAttribute="bottom" secondItem="Oyq-fj-CSE" secondAttribute="bottom" id="Ia0-Du-nOn"/>
+                            <constraint firstItem="kJf-yu-Ynh" firstAttribute="trailing" secondItem="Oyq-fj-CSE" secondAttribute="trailing" id="otd-S0-D1H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kJf-yu-Ynh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="U1p-xB-vEv"/>
+                    <connections>
+                        <outlet property="mapView" destination="Oyq-fj-CSE" id="aca-ac-gNR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlZ-dU-fGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314" y="-648"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oSw-bZ-inF">
+            <objects>
+                <tabBarController id="Y2a-zh-hJx" customClass="ViewController" customModule="fifaworldarya" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pTU-ii-0j4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GRh-16-oCN" kind="relationship" relationship="viewControllers" id="WSM-4R-MJc"/>
+                        <segue destination="kZh-9l-lOb" kind="relationship" relationship="viewControllers" id="82j-VI-BVd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChR-U3-UbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1216" y="-332"/>
+        </scene>
+    </scenes>
+</document>

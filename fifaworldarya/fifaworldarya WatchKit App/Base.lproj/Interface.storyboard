@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="fifaworldarya_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Schedule" id="eMV-fl-A0t">
+                            <connections>
+                                <action selector="scheduleButtonPressed" destination="AgC-eL-Hgc" id="EDw-g5-aRa"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Subscribed" id="dnW-k4-3mo">
+                            <connections>
+                                <action selector="subscribedButtonPressed" destination="AgC-eL-Hgc" id="XZ2-ha-d1y"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="CQH-UG-EXA">
+            <objects>
+                <controller identifier="Schedule" title="Schedule" id="lYH-JC-rRQ" customClass="ScheduleController" customModule="fifaworldarya_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="dbE-Pm-qUF">
+                            <items>
+                                <tableRow identifier="GameRow" selectable="NO" id="6w8-O3-eQU" customClass="GameRowController" customModule="fifaworldarya_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="7Vg-JR-BDj">
+                                        <items>
+                                            <label width="1" alignment="center" text="Label" textAlignment="center" id="at3-AY-RJP">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="GB8-nm-LjA">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" textAlignment="right" id="8rH-fa-nKG">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                                    </label>
+                                                    <label alignment="center" verticalAlignment="center" text="vs" textAlignment="center" id="HZC-Hc-h7p">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                    <label alignment="right" verticalAlignment="center" text="Label" textAlignment="left" id="FYX-fw-8PO">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label width="1" alignment="center" text="Label" textAlignment="center" id="U2E-dg-bPT">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="Label" textAlignment="left" minimumScaleFactor="0.5" id="eKT-Bz-m8n">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="Label" textAlignment="left" id="CsK-0f-FWX">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="CsK-0f-FWX" id="ZhE-4R-Ry8"/>
+                                        <outlet property="locationLabel" destination="eKT-Bz-m8n" id="qyD-ci-apC"/>
+                                        <outlet property="teamAFlagLabel" destination="8rH-fa-nKG" id="m2x-6e-ZiE"/>
+                                        <outlet property="teamALabel" destination="at3-AY-RJP" id="aKX-xd-qfN"/>
+                                        <outlet property="teamBFlagLabel" destination="FYX-fw-8PO" id="ULn-5f-dMT"/>
+                                        <outlet property="teamBLabel" destination="U2E-dg-bPT" id="gEM-BB-n03"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" verticalAlignment="center" text="No games" id="Vdv-rD-FKo">
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="noGamesLabel" destination="Vdv-rD-FKo" id="kxV-YR-Gtt"/>
+                        <outlet property="scheduleTable" destination="dbE-Pm-qUF" id="7Kx-l6-4o9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="768" y="279"/>
+        </scene>
+        <!--Subscribed-->
+        <scene sceneID="toK-Sv-C65">
+            <objects>
+                <controller identifier="Subscribed" title="Subscribed" id="hPX-pq-zOA" customClass="SubscribedController" customModule="fifaworldarya_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="a6E-AN-41R">
+                            <items>
+                                <tableRow identifier="GameRow" selectable="NO" id="eBn-LL-wcj" customClass="GameRowController" customModule="fifaworldarya_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="1s8-Ck-ooj">
+                                        <items>
+                                            <label width="1" alignment="center" text="Label" textAlignment="center" id="geZ-xl-e72">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="bMp-qY-IiW">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" textAlignment="right" id="rWJ-Eo-9rj">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                                    </label>
+                                                    <label alignment="center" verticalAlignment="center" text="vs" textAlignment="center" id="DFR-E1-GDA">
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                    <label alignment="right" verticalAlignment="center" text="Label" textAlignment="left" id="F9y-Ad-NjF">
+                                                        <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label width="1" alignment="center" text="Label" textAlignment="center" id="eYw-95-lwp">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="Label" textAlignment="left" minimumScaleFactor="0.5" id="2zl-ms-ld5">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label width="1" alignment="left" text="Label" textAlignment="left" id="7mu-1p-fOe">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dateLabel" destination="7mu-1p-fOe" id="JIQ-P5-opH"/>
+                                        <outlet property="locationLabel" destination="2zl-ms-ld5" id="AJd-KX-mCs"/>
+                                        <outlet property="teamAFlagLabel" destination="rWJ-Eo-9rj" id="s0f-Fi-BNN"/>
+                                        <outlet property="teamALabel" destination="geZ-xl-e72" id="wOo-zN-WI8"/>
+                                        <outlet property="teamBFlagLabel" destination="F9y-Ad-NjF" id="Svi-Wx-EXc"/>
+                                        <outlet property="teamBLabel" destination="eYw-95-lwp" id="grR-aC-8PU"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <label alignment="center" verticalAlignment="center" text="No games" id="tn1-tU-tEl">
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="noSubscribed" destination="tn1-tU-tEl" id="Mqj-Ta-HVx"/>
+                        <outlet property="scheduleTable" destination="a6E-AN-41R" id="RFT-RX-8LM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="525" y="154"/>
+        </scene>
+    </scenes>
+</document>
